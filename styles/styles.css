@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(41, 41, 68);
+    color: white;
+    font-family: sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+#container {
+    margin: 0 auto;
+    height: 25rem;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+
+.results {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+button {
+    width: 200px;
+    height: 2rem;
+
+    background-color: rgb(0, 149, 255);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+
+}
+
+button:hover {
+    background-color: rgb(3, 255, 3);
+    color: rgb(52, 50, 50);
+}
+
+.cell {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+.one,
+.four,
+.seven {
+    border-right: 3px solid black;
+}
+
+.three,
+.six,
+.nine {
+    border-left: 3px solid black;
+}
+
+.seven,
+.eight,
+.nine {
+    border-top: 3px solid black;
+}
+
+.one,
+.two,
+.three {
+    border-bottom: 3px solid black;
+}
